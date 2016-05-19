@@ -35,6 +35,14 @@ If everything went right, the admin interface is now available at: http://127.0.
 
 # Translating
 
+´´´
+cd wikilegis/
+
+$ django-admin.py makemessages -a
+
+$ django-admin.py compilemessages
+
+´´´
 TODO: Instructions to use Transifex to translate this.
 
 

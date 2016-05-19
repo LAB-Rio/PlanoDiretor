@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-16 13:31-0300\n"
+"POT-Creation-Date: 2016-05-19 19:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,35 +90,43 @@ msgstr "Sua conta agora está ativada."
 msgid "Profile successfully updated"
 msgstr "Perfil atualizado com sucesso"
 
-#: core/admin.py:36
+#: core/admin.py:37
 msgid "Bills updated successfully."
 msgstr "Projetos atualizados com sucesso"
 
-#: core/admin.py:38
+#: core/admin.py:39
 msgid "Update status of selected bills"
 msgstr "Atualizar o status dos projetos selecionados"
 
-#: core/admin.py:64 core/models.py:131 core/models.py:169 core/models.py:218
+#: core/admin.py:52 core/models.py:139
+msgid "segment"
+msgstr "trecho"
+
+#: core/admin.py:52 core/models.py:140
+msgid "segments"
+msgstr "trechos"
+
+#: core/admin.py:109 core/models.py:131 core/models.py:169 core/models.py:218
 msgid "author"
 msgstr "autor"
 
-#: core/admin.py:65
+#: core/admin.py:110
 msgid "authors"
 msgstr "autores"
 
-#: core/admin.py:74
+#: core/admin.py:119
 msgid "video"
 msgstr "vídeo"
 
-#: core/admin.py:75
+#: core/admin.py:120
 msgid "videos"
 msgstr "vídeos"
 
-#: core/admin.py:111
+#: core/admin.py:156
 msgid "Legislative proposal"
 msgstr "Proposta"
 
-#: core/admin.py:112
+#: core/admin.py:157
 msgid ""
 "This data will be used to assign the project to a legislative proposal "
 "pending before the House of Representatives. You only need to inform them if "
@@ -129,15 +137,15 @@ msgstr ""
 "los se o trâmite já foi iniciado. Para apagar os dados, submita os campos em "
 "branco."
 
-#: core/admin.py:161
+#: core/admin.py:206
 msgid "Situation"
 msgstr "Situação"
 
-#: core/admin.py:165
+#: core/admin.py:210
 msgid "Show"
 msgstr "Ver"
 
-#: core/admin.py:167
+#: core/admin.py:212
 msgid "Report"
 msgstr "Relatório"
 
@@ -394,14 +402,6 @@ msgstr "original"
 msgid "content"
 msgstr "conteúdo"
 
-#: core/models.py:139
-msgid "segment"
-msgstr "trecho"
-
-#: core/models.py:140
-msgid "segments"
-msgstr "trechos"
-
 #: core/models.py:170
 msgid "bill segment"
 msgstr "trecho de lei"
@@ -510,7 +510,7 @@ msgstr "proposições"
 msgid "None"
 msgstr "Nenhum"
 
-#: core/templatetags/convert_numbers.py:59
+#: core/templatetags/convert_numbers.py:60
 msgid "Sole paragraph"
 msgstr "Parágrafo único"
 
@@ -572,11 +572,11 @@ msgstr "Newsletter"
 msgid "Newsletters"
 msgstr "Newsletters"
 
-#: settings.py:201
+#: settings.py:212
 msgid "Google"
 msgstr ""
 
-#: settings.py:205
+#: settings.py:216
 msgid "Facebook"
 msgstr ""
 
@@ -631,20 +631,20 @@ msgstr "Voltar à página inicial"
 msgid "Django administration"
 msgstr "Adminsitração do Django"
 
-#: templates/adminsortable2/tabular-1.6.html:9
+#: templates/adminsortable2/tabular-1.6.html:10
 msgid "Sort"
 msgstr "Ordenar"
 
-#: templates/adminsortable2/tabular-1.6.html:17
+#: templates/adminsortable2/tabular-1.6.html:18
 msgid "Delete?"
 msgstr "Deletar?"
 
-#: templates/adminsortable2/tabular-1.6.html:70
+#: templates/adminsortable2/tabular-1.6.html:90
 #, python-format
 msgid "Add another %(verbose_name)s"
 msgstr "Adicionar outro(a) %(verbose_name)s"
 
-#: templates/adminsortable2/tabular-1.6.html:71
+#: templates/adminsortable2/tabular-1.6.html:91
 msgid "Remove"
 msgstr "Remover"
 
