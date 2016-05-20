@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^object-tools/', include('object_tools.tests.urls')),
 ]
 
-admin.site.site_header = 'Wikilegis'
+admin.site.site_header = 'Plano Diretor'
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
