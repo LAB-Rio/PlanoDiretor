@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-19 19:59+0000\n"
+"POT-Creation-Date: 2016-05-20 14:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -594,8 +594,10 @@ msgid "This bill is closed, you can not vote or comment."
 msgstr "Este projeto de lei está fechado, você não poderá votar ou comentar"
 
 #: templates/about.html:17
+#, fuzzy
+#| msgid "about wikilegis"
 msgid "About Wikilegis"
-msgstr "Sobre o Wikilegis"
+msgstr "sobre o wikilegis"
 
 #: templates/about.html:18
 msgid ""
@@ -747,7 +749,7 @@ msgstr "Baixar"
 
 #: templates/index.html:11
 msgid "Your legislative editing tool"
-msgstr "Sua ferramenta de edição legislativa"
+msgstr "Avaliação do Plano Diretor do Rio de Janeiro"
 
 #: templates/index.html:12
 msgid ""
@@ -755,9 +757,9 @@ msgid ""
 "Hacker Lab, designed to enable citizens to suggest modifications to the "
 "wording of Bills"
 msgstr ""
-"O Wikilegis é um projeto desenvolvido pelo Laboratório Hacker da Câmara dos "
-"Deputados, com o objetivo de permitir ao(à) cidadão(ã) a propor alterações à "
-"redação de projetos de lei."
+"O Plano Diretor do Rio deve ser revisado a cada 10 anos e avaliado a cada "
+"5.  A Prefeitura do Rio de Janeiro está iniciando o processo de avaliação do "
+"Plano e espera contar com a sua participação! "
 
 #: templates/index.html:19
 msgid "Login"
@@ -887,6 +889,9 @@ msgstr ""
 #: templates/registration/resend_activation_form.html:27
 msgid "Resend"
 msgstr "Reenviar"
+
+#~ msgid "About o Plano Diretor"
+#~ msgstr "Sobre  o Plano Diretor"
 
 #~ msgid "title"
 #~ msgstr "título"

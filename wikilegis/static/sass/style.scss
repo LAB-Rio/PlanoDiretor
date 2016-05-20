@@ -47,7 +47,7 @@ $nav-height: 56px;
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: $lightgray;
-    background-image: url(static("img/bg.png"));
+    background-image: url(static("img/background.png"));
     padding-top: $nav-height;
     background-attachment: fixed;
 }
@@ -113,7 +113,7 @@ body {
     &.fixed-top {
         position: fixed;
         display: fixed;
-        background-color: $maingreen;
+        background-color: #2C4663;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         .logo {
             visibility: visible;
