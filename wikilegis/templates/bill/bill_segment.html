@@ -90,24 +90,26 @@
                 <div class="article-prop">
                     <p id="original" data-raw-content="{{ segment.content }}"><span class="article-type">{% segment_numbering segment %}</span>{{ segment.content }}</p>
                 </div>
+                   <div class="priorizar">
+                       <p>Priorizar</p>
+                       <div class="star-box">
+                          <input id="rating-5" type="radio" name="rating" value="5" />
+                          <label class="star-lbl" for="rating-5"></label>
+                          <input id="rating-4" type="radio" name="rating" value="4" />
+                          <label class="star-lbl" for="rating-4"></label>
+                          <input id="rating-3" type="radio" name="rating" value="3" />
+                          <label class="star-lbl" for="rating-3"></label>
+                          <input id="rating-2" type="radio" name="rating" value="2" />
+                          <label class="star-lbl" for="rating-2"></label>
+                          <input id="rating-1" type="radio" name="rating" value="1" />
+                          <label class="star-lbl" for="rating-1"></label>                
+                        </div>
+               </div>
+               
+               
+                  
                 <div class="after-bar">
                     <div class="col s12 m12 l8">
-                        <p>Priorizar</p>
-                        <form>
-                        	<div class="stars">
-                        		<input type="radio" name="star" class="star-1" id="star-1" />
-                        		<label class="star-1" for="star-1">1</label>
-                        		<input type="radio" name="star" class="star-2" id="star-2" />
-                        		<label class="star-2" for="star-2">2</label>
-                        		<input type="radio" name="star" class="star-3" id="star-3" />
-                        		<label class="star-3" for="star-3">3</label>
-                        		<input type="radio" name="star" class="star-4" id="star-4" />
-                        		<label class="star-4" for="star-4">4</label>
-                        		<input type="radio" name="star" class="star-5" id="star-5" />
-                        		<label class="star-5" for="star-5">5</label>
-                        		<span></span>
-                        	</div>
-                        </form>
                         
                         <!--<div class="user col s12 m6">-->
                             <!--<div class="col m3 s3">-->
@@ -134,8 +136,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         <div class="row comments">
             <div class="col s11 offset-m1">
                 <div class="main">
@@ -156,6 +156,9 @@
                 </div>
             </div>
         </div>
+        </div>
+
+        
         {% if segment.substitutes.all %}
         <div class="articles-header submitted-proposals">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="imgView" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 79.536 79.536" style="enable-background:new 0 0 79.536 79.536;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="27546" data-kw="leader">
