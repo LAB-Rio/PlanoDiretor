@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^bill/(?P<bill_id>\d+)/segments/(?P<segment_id>\d+)/amend/$', 'wikilegis.core.views.create_amendment', name='create_amendment'),
     url(r'^amendments/(?P<amendment_id>\d+)/$', 'wikilegis.core.views.show_amendment', name='show_amendment'),
     url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
+    url(r'^acompanhamento/$', TemplateView.as_view(template_name='acompanhamento.html'), name='acompanhamento'),
     url(r'^bill/(?P<pk>\d+)/report/$', BillReport.as_view(), name='bill_report'),
     url(r'^upvote/(?P<content_type>\d+)/(?P<object_id>\d+)/$', 'wikilegis.core.views.upvote', name='upvote'),
     url(r'^downvote/(?P<content_type>\d+)/(?P<object_id>\d+)/$', 'wikilegis.core.views.downvote', name='downvote'),

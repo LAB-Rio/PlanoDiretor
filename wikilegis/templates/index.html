@@ -34,24 +34,28 @@
 </div>
 
 
+{% include "_carousel.html" %}
+
+{% include "_saibamais.html" %}
 
 <div class="row projects" id="projects">
+    
     <div class="container">
         <div class="row">
-            <div class="col s12 m6">
-                <h2 class="title">{% if request.GET.status = 'closed' %}{% trans "Closed Law Projects" %}{% else %}{% trans "Law Projects" %}{% endif %}</h2>
+            <div class="col m12">
+                <h2 class="title --planodiretor animated fadeInRightShort go">{% if request.GET.status = 'closed' %}{% trans "Closed Law Projects" %}{% else %}{% trans "Law Projects" %}{% endif %}</h2>
             </div>
             <div class="col s12 m6">
-                <ul class="filter">
-                    {% for item in orderer.choices %}
-                    <li><a {% if item.selected %} class="active" {% endif %} href="{{ item.query_string }}#projects">{{ item.display }}</a>
-                    </li><span class="divider">|</span> {% endfor %}
-                </ul>
-                <ul class="filter">
-                    <li><a {% if request.GET.status != 'closed' %} class="active" {% endif %} href="{% url 'index' %}?status=published#projects">{% trans "Open" %}</a>
-                    </li><span class="divider">|</span>
-                    <li><a {% if request.GET.status = 'closed' %} class="active" {% endif %} href="{% url 'index' %}?status=closed#projects">{% trans "Closed" %}</a>
-                </ul>
+                <!--<ul class="filter">-->
+                <!--    {% for item in orderer.choices %}-->
+                    <!--<li><a {% if item.selected %} class="active" {% endif %} href="{{ item.query_string }}#projects">{{ item.display }}</a>-->
+                <!--    </li><span class="divider">|</span> {% endfor %}-->
+                <!--</ul>-->
+                <!--<ul class="filter">-->
+                <!--    <li><a {% if request.GET.status != 'closed' %} class="active" {% endif %} href="{% url 'index' %}?status=published#projects">{% trans "Open" %}</a>-->
+                <!--    </li><span class="divider">|</span>-->
+                <!--    <li><a {% if request.GET.status = 'closed' %} class="active" {% endif %} href="{% url 'index' %}?status=closed#projects">{% trans "Closed" %}</a>-->
+                <!--</ul>-->
             </div>
         </div>
         <div class="pls">
@@ -59,26 +63,13 @@
             {% for bill in bills %}
             <a class="hover" href="{% url 'show_bill' bill.id %}">
                 <div class="pl row valign-wrapper">
-                    <div class="col m2 hide-on-med-and-down">
-                        <div class="circle {% if bill.status = 'closed' %}border-red{% endif %} valign-wrapper">
-                            <img class="logo" src="{% static 'img/icons/' %}{{ bill.theme }}{% if bill.status = 'closed' %}-2{% endif %}.png" alt="{{ bill.get_theme_display }}" title="{{ bill.get_theme_display }}"/>
-                        </div>
-                    </div>
-                    <div class="col s12 m10 description">
+                     <div class="col s12 m10 description">
                         <div class="row">
                             <h5 class="title">{{ bill.title }}</h5>
                             <p class="d">{{ bill.description|linebreaks|truncatechars:205 }}</p>
-                            <span class="pl-created-date">{% trans "Created at" %} {{ bill.created|date }}</span>
+                            <!--<span class="pl-created-date">{% trans "Created at" %} {{ bill.created|date }}</span>-->
                         </div>                        
-                        <div class="row">
-                            {% if bill.proposition_set.all.0.situation %}
-                            <div class="col s12 status">
-                                <span class="title">{% trans "Status" %} </span><span class="status-content">{{ bill.proposition_set.all.0.situation }}</span>
-                            </div>
-                            {% else %}
-                            <div class="col s12"></div>
-                            {% endif %}
-                        </div>
+                        
                     </div>
                     <div class="col s12 m2 prop-count">
                         {% if bill.score > 0 %}
@@ -111,4 +102,10 @@
         </div>
     </div>
 </div>
+
+<div class="row footer">
+  <a href="http://lab.rio" rel="external nofollow"><img src="http://lab-planodiretor.herokuapp.com/images/labrioLogo.png" class="logo"></a>
+</div>
+
+
 {% endblock %}

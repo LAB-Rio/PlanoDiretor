@@ -71,7 +71,7 @@ jQuery(document).ready(function ($) {
     function open() {
         $(document.body).append('<div id="overlay"></div>');
         $('.wiki-navbar').addClass('opened');
-        $('.wiki-navbar').css('background-color', '#324545');
+        $('.wiki-navbar').css('background-color', '#2C4663');
         $('.wiki-navbar').css('box-shadow', '0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)');                   
         $('#menu-button').html('close');
         $('.wiki-navbar').css('height', 'auto');
@@ -169,5 +169,53 @@ jQuery(document).ready(function ($) {
 
     // Dropdown Orderer
     $(".dropdown-button").dropdown();
+    
+    
+    //Carousel
+    
+     $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    }); 
+    
+    $('#saibamais-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
 
 });
+

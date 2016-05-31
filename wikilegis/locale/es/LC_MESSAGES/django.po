@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-20 20:06+0000\n"
+"POT-Creation-Date: 2016-05-31 04:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgstr ""
 msgid "Published"
 msgstr ""
 
-#: core/models.py:21 templates/index.html:53
+#: core/models.py:21 templates/index.html:57
 msgid "Closed"
 msgstr ""
 
@@ -544,11 +544,11 @@ msgstr ""
 msgid "history notifications"
 msgstr ""
 
-#: notification/models.py:25 templates/bill/bill.html:51
+#: notification/models.py:25 templates/bill/bill.html:54
 msgid "Daily"
 msgstr ""
 
-#: notification/models.py:26 templates/bill/bill.html:46
+#: notification/models.py:26 templates/bill/bill.html:49
 msgid "Weekly"
 msgstr ""
 
@@ -585,11 +585,11 @@ msgstr ""
 msgid "This bill is closed, you can not vote or comment."
 msgstr ""
 
-#: templates/about.html:17
-msgid "About Wikilegis"
+#: templates/about.html:17 templates/acompanhamento.html:17
+msgid "About Plano Diretor"
 msgstr ""
 
-#: templates/about.html:18
+#: templates/about.html:18 templates/acompanhamento.html:18
 msgid ""
 "Wikilegis is a project developed by the Brazilian Chamber of Deputies’ "
 "Hacker Lab, designed to enable citizens to suggest modifications to the "
@@ -602,12 +602,19 @@ msgstr ""
 msgid ""
 "Visit us on Trello, Github and in our page to propose new features or to "
 "report bugs. If you have programming skills, you can also collaborate to the "
-"development of Wikilegis. "
+"development of Wikilegis."
 msgstr ""
 
-#: templates/about.html:33
+#: templates/about.html:32 templates/acompanhamento.html:33
 #: templates/registration/registration_complete.html:14
 msgid "Back to main page"
+msgstr ""
+
+#: templates/acompanhamento.html:22
+msgid ""
+"Visit us on Trello, Github and in our page to propose new features or to "
+"report bugs. If you have programming skills, you can also collaborate to the "
+"development of Wikilegis. "
 msgstr ""
 
 #: templates/admin/base_site.html:6
@@ -664,32 +671,32 @@ msgstr ""
 msgid "Subsection"
 msgstr ""
 
-#: templates/bill/bill.html:30
+#: templates/bill/bill.html:33
 msgid "Unsubscribe"
 msgstr ""
 
-#: templates/bill/bill.html:37
+#: templates/bill/bill.html:40
 msgid "Subscribe to this bill"
 msgstr ""
 
-#: templates/bill/bill.html:41
+#: templates/bill/bill.html:44
 msgid ""
 "You can be notified of changes in this bill via e-mail by subscribing to it."
 msgstr ""
 
-#: templates/bill/bill.html:55
+#: templates/bill/bill.html:58
 msgid "Subscribe"
 msgstr ""
 
-#: templates/bill/bill.html:102
+#: templates/bill/bill.html:105
 msgid "Bill status:"
 msgstr ""
 
-#: templates/bill/bill.html:104
+#: templates/bill/bill.html:107
 msgid "Attendees:"
 msgstr ""
 
-#: templates/bill/bill.html:105
+#: templates/bill/bill.html:108
 msgid "Proposals:"
 msgstr ""
 
@@ -697,11 +704,11 @@ msgstr ""
 msgid "Original text"
 msgstr ""
 
-#: templates/bill/bill_segment.html:149
+#: templates/bill/bill_segment.html:169
 msgid "Submitted proposals"
 msgstr ""
 
-#: templates/bill/bill_segment.html:215
+#: templates/bill/bill_segment.html:235
 msgid "Make a proposal!"
 msgstr ""
 
@@ -753,15 +760,15 @@ msgstr ""
 msgid "See the bills you can opine"
 msgstr ""
 
-#: templates/index.html:42
+#: templates/index.html:46
 msgid "Closed Law Projects"
 msgstr ""
 
-#: templates/index.html:42
+#: templates/index.html:46
 msgid "Law Projects"
 msgstr ""
 
-#: templates/index.html:51
+#: templates/index.html:55
 msgid "Open"
 msgstr ""
 
@@ -769,27 +776,23 @@ msgstr ""
 msgid "Created at"
 msgstr ""
 
-#: templates/index.html:75
-msgid "Status"
-msgstr ""
-
-#: templates/index.html:85
+#: templates/index.html:77
 msgid "Proposals"
 msgstr ""
 
-#: templates/index.html:85
+#: templates/index.html:77
 msgid "Proposal"
 msgstr ""
 
-#: templates/index.html:89 templates/index.html.py:93
+#: templates/index.html:81 templates/index.html.py:85
 msgid "No proposals"
 msgstr ""
 
-#: templates/index.html:94
+#: templates/index.html:86
 msgid "Participate"
 msgstr ""
 
-#: templates/index.html:105
+#: templates/index.html:97
 msgid "No bills"
 msgstr ""
 

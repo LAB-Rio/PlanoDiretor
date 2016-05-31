@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-20 20:06+0000\n"
+"POT-Creation-Date: 2016-05-31 04:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,7 @@ msgstr "Rascunho"
 msgid "Published"
 msgstr "Publicado"
 
-#: core/models.py:21 templates/index.html:53
+#: core/models.py:21 templates/index.html:57
 msgid "Closed"
 msgstr "Fechado"
 
@@ -552,11 +552,11 @@ msgstr ""
 msgid "history notifications"
 msgstr ""
 
-#: notification/models.py:25 templates/bill/bill.html:51
+#: notification/models.py:25 templates/bill/bill.html:54
 msgid "Daily"
 msgstr "Diariamente"
 
-#: notification/models.py:26 templates/bill/bill.html:46
+#: notification/models.py:26 templates/bill/bill.html:49
 msgid "Weekly"
 msgstr "Semanalmente"
 
@@ -593,13 +593,13 @@ msgstr "Selecione um idioma"
 msgid "This bill is closed, you can not vote or comment."
 msgstr "Este projeto de lei está fechado, você não poderá votar ou comentar"
 
-#: templates/about.html:17
+#: templates/about.html:17 templates/acompanhamento.html:17
 #, fuzzy
-#| msgid "about wikilegis"
-msgid "About Wikilegis"
-msgstr "sobre o wikilegis"
+#| msgid "About o Plano Diretor"
+msgid "About Plano Diretor"
+msgstr "Sobre  o Plano Diretor"
 
-#: templates/about.html:18
+#: templates/about.html:18 templates/acompanhamento.html:18
 msgid ""
 "Wikilegis is a project developed by the Brazilian Chamber of Deputies’ "
 "Hacker Lab, designed to enable citizens to suggest modifications to the "
@@ -607,14 +607,31 @@ msgid ""
 "BY 4.0. Besides participating in discussions of the bill, you can help us to "
 "improve our tool."
 msgstr ""
-"O Wikilegis é um projeto desenvolvido pelo Laboratório Hacker da Câmara dos "
-"Deputados, com o objetivo de permitir ao(à) cidadão(ã) a propor alterações à "
-"redação de projetos de lei. O projeto é desenvolvido em código aberto e todo "
-"conteúdo do site é colocado sob a licença CC BY SA 4.0. Além de participar "
-"da discussão dos projetos de lei, você pode auxiliar no melhoramento da "
-"ferramenta."
+"O Plano Diretor do Rio deve ser revisado a cada 10 anos e avaliado a cada 5."
+"A Prefeitura do Rio de Janeiro está iniciando o processo de avaliação do "
+"Plano e espera contar com a sua participação!"
 
 #: templates/about.html:22
+#, fuzzy
+#| msgid ""
+#| "Visit us on Trello, Github and in our page to propose new features or to "
+#| "report bugs. If you have programming skills, you can also collaborate to "
+#| "the development of Wikilegis. "
+msgid ""
+"Visit us on Trello, Github and in our page to propose new features or to "
+"report bugs. If you have programming skills, you can also collaborate to the "
+"development of Wikilegis."
+msgstr ""
+"Acesse o nosso Trello e nosso Github para sugerir novas funcionalidades ou "
+"reportar bugs. Se você tiver habilidades de programação, pode também "
+"contribuir para o desenvolvimento do Plano Diretor."
+
+#: templates/about.html:32 templates/acompanhamento.html:33
+#: templates/registration/registration_complete.html:14
+msgid "Back to main page"
+msgstr "Voltar à página inicial"
+
+#: templates/acompanhamento.html:22
 msgid ""
 "Visit us on Trello, Github and in our page to propose new features or to "
 "report bugs. If you have programming skills, you can also collaborate to the "
@@ -622,12 +639,7 @@ msgid ""
 msgstr ""
 "Acesse o nosso Trello e nosso Github para sugerir novas funcionalidades ou "
 "reportar bugs. Se você tiver habilidades de programação, pode também "
-"contribuir para o desenvolvimento do Wikilegis."
-
-#: templates/about.html:33
-#: templates/registration/registration_complete.html:14
-msgid "Back to main page"
-msgstr "Voltar à página inicial"
+"contribuir para o desenvolvimento do Plano Diretor."
 
 #: templates/admin/base_site.html:6
 msgid "Django administration"
@@ -683,34 +695,34 @@ msgstr "Seção"
 msgid "Subsection"
 msgstr "Subseção"
 
-#: templates/bill/bill.html:30
+#: templates/bill/bill.html:33
 msgid "Unsubscribe"
 msgstr "Cancelar assinatura"
 
-#: templates/bill/bill.html:37
+#: templates/bill/bill.html:40
 msgid "Subscribe to this bill"
 msgstr "Receber notificações"
 
-#: templates/bill/bill.html:41
+#: templates/bill/bill.html:44
 msgid ""
 "You can be notified of changes in this bill via e-mail by subscribing to it."
 msgstr ""
 "Você pode ser notificado de mudanças neste projeto via e-mail ao fazer sua "
 "assinatura."
 
-#: templates/bill/bill.html:55
+#: templates/bill/bill.html:58
 msgid "Subscribe"
 msgstr "Assinar"
 
-#: templates/bill/bill.html:102
+#: templates/bill/bill.html:105
 msgid "Bill status:"
 msgstr "Status da proposta:"
 
-#: templates/bill/bill.html:104
+#: templates/bill/bill.html:107
 msgid "Attendees:"
 msgstr "Participantes:"
 
-#: templates/bill/bill.html:105
+#: templates/bill/bill.html:108
 msgid "Proposals:"
 msgstr "Propostas:"
 
@@ -718,11 +730,11 @@ msgstr "Propostas:"
 msgid "Original text"
 msgstr "Texto original"
 
-#: templates/bill/bill_segment.html:149
+#: templates/bill/bill_segment.html:169
 msgid "Submitted proposals"
 msgstr "Propostas"
 
-#: templates/bill/bill_segment.html:215
+#: templates/bill/bill_segment.html:235
 msgid "Make a proposal!"
 msgstr "Sugerir uma proposta!"
 
@@ -775,17 +787,17 @@ msgstr "cadastre-se"
 
 #: templates/index.html:25
 msgid "See the bills you can opine"
-msgstr "Veja os projetos de lei que você pode opinar"
+msgstr "Veja mais"
 
-#: templates/index.html:42
+#: templates/index.html:46
 msgid "Closed Law Projects"
 msgstr "Projetos de Lei fechados"
 
-#: templates/index.html:42
+#: templates/index.html:46
 msgid "Law Projects"
-msgstr "Projetos de lei"
+msgstr "Plano Diretor Sustentável da Cidade do Rio de Janeiro"
 
-#: templates/index.html:51
+#: templates/index.html:55
 msgid "Open"
 msgstr "Abertas"
 
@@ -793,27 +805,23 @@ msgstr "Abertas"
 msgid "Created at"
 msgstr "Criado em"
 
-#: templates/index.html:75
-msgid "Status"
-msgstr "Estado"
-
-#: templates/index.html:85
+#: templates/index.html:77
 msgid "Proposals"
 msgstr "Propostas"
 
-#: templates/index.html:85
+#: templates/index.html:77
 msgid "Proposal"
 msgstr "Proposta"
 
-#: templates/index.html:89 templates/index.html.py:93
+#: templates/index.html:81 templates/index.html.py:85
 msgid "No proposals"
 msgstr "Não há propostas"
 
-#: templates/index.html:94
+#: templates/index.html:86
 msgid "Participate"
 msgstr "Participe"
 
-#: templates/index.html:105
+#: templates/index.html:97
 msgid "No bills"
 msgstr "Não há projetos de lei"
 
@@ -890,8 +898,13 @@ msgstr ""
 msgid "Resend"
 msgstr "Reenviar"
 
-#~ msgid "About o Plano Diretor"
-#~ msgstr "Sobre  o Plano Diretor"
+#~ msgid "Status"
+#~ msgstr "Estado"
+
+#, fuzzy
+#~| msgid "about wikilegis"
+#~ msgid "About Wikilegis"
+#~ msgstr "sobre o wikilegis"
 
 #~ msgid "title"
 #~ msgstr "título"

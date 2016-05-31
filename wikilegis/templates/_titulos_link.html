@@ -1,0 +1,8 @@
+{% load i18n %}
+
+{% for bill in bills %}
+<ul>
+    <li><a class="" href="{% url 'show_bill' bill.id %}">{{ bill.title|truncatechars:15 }}</a></li>
+</ul>
+
+{% endfor %}
