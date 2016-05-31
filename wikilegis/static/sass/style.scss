@@ -17,6 +17,8 @@ $countcolor: rgb(185,102,53);
 
 $unnamedcolor: #28D27A;
 
+$graytransparent: rgba(197, 197, 197, 0.7);
+
 .material-icons.md-36 {
     font-size: 36px;
 }
@@ -53,10 +55,14 @@ body {
 }
 
 .row.main {
-    background-color: $lightgray;
+    background-color: #fff;
     min-height: 100vh;
     padding-top: 20px;
     margin-bottom: -20px;
+}
+
+.testimonials .container p {
+    text-align: center;
 }
 
 .wiki-navbar {
@@ -277,6 +283,10 @@ strong {
     h2.title {
         font-weight: bold;
         color: lighten(black, 25%);
+        
+        &.--planodiretor{
+            color: #fff;
+        }    
     }
     ul.filter {
         float: right;
@@ -305,8 +315,7 @@ strong {
             display: inline-block
         }
     }
-    background-color: $lightgray;
-    background-image: url(static("img/etpat.png"));
+    background-color: $graytransparent;
     min-height: 100vh;
     margin-bottom: -20px;
     padding-top: $nav-height;
