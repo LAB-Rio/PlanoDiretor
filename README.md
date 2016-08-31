@@ -1,10 +1,14 @@
-# Requirements
+# Plano Diretor 
+Usamos a tecnologia Wikilegis do labhacker para avaliar de forma participativa o 
+plano diretor da cidade do Rio de Janeiro! Faça em sua cidade tbm!
+
+# Requisitos minimos
 
 * Python 2.7.x
 * Probably a working C compiler and `make` (to build libsass)
 * Pillow install dependencies [1]
 
-# Installation
+# Instalação
 
 ```bash
 $ git clone git@github.com:labhackercd/wikilegis.git
@@ -44,3 +48,5 @@ $ django-admin.py compilemessages
 
 ```
 [1]: https://pillow.readthedocs.org/en/latest/installation.html
+-----------
+:<3: [Lab.Rio](https://labrio.cc)
